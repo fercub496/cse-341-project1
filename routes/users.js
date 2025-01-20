@@ -6,6 +6,6 @@ const userController = require ('../controllers/user');
 
 router.get('/',userController.getAll);
 
-router.get('/', userController.getSingle);
+router.get('/:id', userController.getSingle);
 
 module.exports = router;
